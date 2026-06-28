@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: task-tracker-backend
+    runtime: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: MONGO_URI
+        sync: false # Render will prompt the user to input this value during deployment
+      - key: PORT
+        value: 5000
