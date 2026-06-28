@@ -6,6 +6,13 @@ import TaskList from './components/TaskList';
 // Fetch API base URL from Vite environment variables or default to local port 5000
 const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5000/api/tasks';
 
+// Set up custom axios instance with headers to bypass localtunnel reminder warning
+const api = axios.create({
+  headers: {
+    'bypass-tunnel-reminder': 'true'
+  }
+});
+
 export default function App() {
   const [tasks, setTasks] = useState([]);
   const [editTask, setEditTask] = useState(null);
@@ -22,7 +29,7 @@ export default function App() {
       if (priorityFilter) params.priority = priorityFilter;
       if (sortBy) params.sortBy = sortBy;
 
-      const { data } = await axios.get(API_BASE, { params });
+      const { data } = await api.get(API_BASE, { params });
       setTasks(data);
     } catch (error) {
       console.error('Error fetching tasks:', error);
@@ -36,9 +43,9 @@ export default function App() {
   const handleSave = async (formData) => {
     try {
       if (editTask) {
-        await axios.put(`${API_BASE}/${editTask._id}`, formData);
+        await api.put(`${API_BASE}/${editTask._id}`, formData);
       } else {
-        await axios.post(API_BASE, formData);
+        await api.post(API_BASE, formData);
       }
       setEditTask(null);
       fetchTasks();
@@ -49,7 +56,7 @@ export default function App() {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`${API_BASE}/${id}`);
+      await api.delete(`${API_BASE}/${id}`);
       fetchTasks();
     } catch (error) {
       console.error('Error deleting task:', error);
