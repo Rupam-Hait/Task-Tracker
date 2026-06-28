@@ -27,19 +27,7 @@
 
 ---
 
-## 📸 Preview
 
-<div align="center">
-
-| Dashboard | Add / Edit Task |
-|:---------:|:---------------:|
-| ![Dashboard](https://placehold.co/420x240/1a1a2e/4F9CF9?text=Dashboard+View&font=montserrat) | ![Form](https://placehold.co/420x240/1a1a2e/00C853?text=Task+Form+View&font=montserrat) |
-
-> 💡 *Replace the placeholders above with real screenshots of your app once deployed.*
-
-</div>
-
----
 
 ## ✨ Features
 
