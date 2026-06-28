@@ -1,8 +1,8 @@
-<div align="center">
+<!-- <div align="center">
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&duration=2800&pause=2000&color=4F9CF9&center=true&vCenter=true&width=600&lines=📝+TaskSpace;MERN+Stack+Task+Tracker" alt="Typing SVG" />
 
-<br/>
+<br/> -->
 
 [![Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-Visit%20App-4F9CF9?style=for-the-badge)](https://frontend-eight-self-75.vercel.app)
 [![Backend API](https://img.shields.io/badge/⚙️%20Backend%20API-Render-00C853?style=for-the-badge)](https://task-tracker-backend-vhix.onrender.com)
