@@ -4,7 +4,7 @@
 
 <br/> -->
 
-[![Live Demo]](https://frontend-eight-self-75.vercel.app)
+
 [![Backend API](https://img.shields.io/badge/⚙️%20Backend%20API-Render-00C853?style=for-the-badge)](https://task-tracker-backend-vhix.onrender.com)
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/Rupam-Hait/Task-Tracker)
 
